@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*To Box Model*/
+    overflow-x: hidden;
+}
+
+body{
+    font-family:  "Merriweather" , sans-serif;
+    background-color: #ebf2ff;
+}
+
+.button__primary{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+      );
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto ;
+    padding: 0 15px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar__brand{
+    width: 100px;
+}
+
+.navbar__logo{
+    width: 100%;
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__image__container{
+    width: 100%;
+}
+
+.hero__image{
+    width: 100%;
+}
+
+.hero__text{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0px;
+}
+
+/* Explore Menu */
+
+.explore__menu__container{
+margin-top:50px;
+}
+
+.explore__menu__text{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.explore__menu__view__more{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+ .food__menu__card{
+  width: 100%;
+  background-color: white;
+  margin-bottom: 20px;
+ }
+
+ .food__image{
+     width: 100%;
+     border-radius: 8px 8px 0 0;
+     
+ }
+
+ .food__menu__card__description{
+     padding: 10px;
+ }
+
+@media (min-width :  768px ){
+.navbar{
+ justify-content: space-between;
+ padding: 10px 20px;
+}
+.navbar__brand{
+    width: 150px;
+}
+.button__primary{
+    padding: 12px 20px;
+    font-size: 20px;
+}
+.hero__container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.explore__menu__lists{
+    margin-top: 50px;
+display: flex;
+gap: 8px;
+}
+
+
+.explore__menu__container{
+    position: relative;
+}
+
+.explore__menu__gradient__bg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+      );
+      z-index: -3;
+      
+}
+
+
+#ice{
+margin-top: -40px;
+margin-bottom: 30px;
+
+}
+
+}
+
+@media (min-width :  1020px ){
+    .container{
+        max-width: 900px;
+    }
+
+    
+    }
+    .hero__text{
+        font-size: 50px;
+
+    }
+}
+
+@media (min-width :  1400px ){
+  .container{
+      max-width: 1250px;
+  }
+}
